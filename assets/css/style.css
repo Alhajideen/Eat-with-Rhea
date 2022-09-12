@@ -16,10 +16,207 @@
   background-repeat: no-repeat;
 }
 .header .phone-nav {
+  width: 90%;
+  margin: auto;
   display: flex;
   height: auto;
   margin: auto;
 }
 .header .phone-nav .hamburger {
   width: 15%;
+}
+.header .jumbo-contain {
+  width: 90%;
+  margin: auto;
+}
+.header .jumbo-contain .message .meal {
+  font-size: 50px;
+  font-weight: 400;
+  color: #ec5242;
+  font-weight: 600;
+  background-image: url("../img/red-black-stripe.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .jumbo-contain .paragraph {
+  margin: auto;
+  background-color: #f8f8f8;
+  padding: 10px 5px;
+  border: 3px solid white;
+  font-size: 22px;
+  font-weight: 400;
+}
+.header .jumbo-contain .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .jumbo-contain .date h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.header .jumbo-contain .date p {
+  font-size: 18px;
+}
+
+.main-program {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  background-image: url("../img/pattern_bg.png");
+  padding: 10px;
+}
+.main-program .program-contain {
+  text-align: center;
+  padding-top: 30px;
+}
+.main-program .program-contain h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.main-program .program-contain .line {
+  height: 3px;
+  width: 50px;
+  background-color: red;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.main-program .row {
+  width: 97%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.main-program .row .col-md-2 {
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+  background: rgba(52, 57, 57, 0.818);
+  padding: 10px 0;
+  margin-top: 10px;
+}
+.main-program .row .col-md-2 .icon {
+  width: 15%;
+}
+.main-program .row .col-md-2 .tittle {
+  width: 25%;
+}
+.main-program .row .col-md-2 .tittle h2 {
+  font-size: 20px;
+  color: white;
+  opacity: 1.5;
+  word-wrap: break-word;
+}
+.main-program .row .col-md-2 .desc {
+  width: 50%;
+}
+.main-program .row .col-md-2 .desc p {
+  font-size: 15px;
+}
+.main-program .btn {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.main-program .btn .contact-btn {
+  padding: 20px 10px;
+  font-size: 20px;
+  background-color: #ff4f38;
+  color: white;
+  border: none;
+}
+
+.staff {
+  width: 100%;
+}
+.staff .featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.staff .featured .line {
+  height: 3px;
+  width: 50px;
+  background-color: red;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.staff .staff-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+}
+.staff .staff-container .staff-card {
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+.staff .staff-container .staff-card .staff-details h3 {
+  font-size: 25px;
+}
+.staff .staff-container .staff-card .staff-details h4 {
+  font-size: 20px;
+  color: #ec5242;
+  line-height: 20px;
+}
+.staff .staff-container .staff-card .staff-details p {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.partners {
+  width: 100%;
+  background-color: #414246;
+}
+.partners .partner-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partners .partner-header .line {
+  height: 3px;
+  width: 50px;
+  background-color: red;
+  margin: auto;
+  margin-top: 10px;
+}
+.partners .partners-container {
+  padding: 20px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.partners .partners-container .partner-logo {
+  width: 110px;
+}
+.partners .partners-container .partner-logo img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+  align-items: center;
+}
+.footer .footer-logo {
+  width: 50%;
+}
+.footer .footer-logo h1 {
+  font-size: 30px;
+}
+.footer .all-rights {
+  width: 45%;
+}
+.footer .all-rights h4 {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
