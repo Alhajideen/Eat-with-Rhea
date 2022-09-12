@@ -38,6 +38,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .header .jumbo-contain .paragraph {
@@ -219,4 +220,103 @@
 }
 .footer .all-rights h4 {
   font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 100vh;
+  }
+  .phone-nav {
+    display: none !important;
+  }
+  .nav-desktop {
+    width: 100%;
+    background-color: white;
+  }
+  .nav-desktop .desktop-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+  }
+  .nav-desktop .desktop-container span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #151517;
+    padding: 10px 0;
+  }
+  .nav-desktop .desktop-container .menu-list {
+    width: 80%;
+  }
+  .nav-desktop .desktop-container .menu-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-desktop .desktop-container .menu-list ul li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #151517;
+    padding: 10px 0;
+  }
+  .nav-desktop .desktop-container .menu-list ul li a {
+    text-decoration: none;
+    color: #414246;
+  }
+  .nav-desktop .desktop-container .menu-list ul .design {
+    padding: 10px;
+    border: 3px solid red;
+  }
+  .jumbo-contain {
+    width: 80% !important;
+  }
+  .jumbo-contain .message .hello {
+    font-size: 50px;
+  }
+  .jumbo-contain .message .meal {
+    font-size: 80px !important;
+    line-height: 10vh;
+  }
+  .jumbo-contain .paragraph {
+    margin-top: 50px !important;
+  }
+  .jumbo-contain .date {
+    margin-top: 20px !important;
+  }
+  .main-program .row {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  .main-program .row .col-md-2 {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .main-program .row .col-md-2 .icon {
+    width: 100%;
+    height: 30% !important;
+  }
+  .main-program .row .col-md-2 .tittle {
+    width: 100%;
+  }
+  .main-program .row .col-md-2 .tittle h2 {
+    font-size: 20px;
+  }
+  .main-program .row .col-md-2 .desc {
+    width: 100%;
+  }
+  .main-program .row .col-md-2 .desc p {
+    font-size: 20px;
+  }
+  .main-program .btn {
+    display: none;
+  }
+  .main-program .col-md-2:hover {
+    border: 1px solid white;
+  }
 }/*# sourceMappingURL=style.css.map */
