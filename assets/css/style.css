@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: auto;
+  background-image: url("../img/jumbo-bg.png");
+  background-position-x: center;
+  background-position-y: top;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-repeat: no-repeat;
+}
+.header .phone-nav {
+  display: flex;
+  height: auto;
+  margin: auto;
+}
+.header .phone-nav .hamburger {
+  width: 15%;
+}/*# sourceMappingURL=style.css.map */
