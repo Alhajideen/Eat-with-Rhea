@@ -47,6 +47,12 @@
   -webkit-text-fill-color: transparent;
   font-family: "COCOGOOSE", sans-serif !important;
 }
+.header .jumbo-contain .about-message {
+  font-size: 50px;
+  font-weight: 400;
+  color: #ec5242;
+  font-weight: 600;
+}
 .header .jumbo-contain .paragraph {
   margin: auto;
   background-color: #f8f8f8;
@@ -66,6 +72,12 @@
 }
 .header .jumbo-contain .date p {
   font-size: 18px;
+}
+.header .about-contact h2 {
+  font-size: 25px;
+}
+.header .about-contact p {
+  font-size: 20px;
 }
 
 .main-program {
@@ -278,14 +290,18 @@
     padding: 10px;
     border: 3px solid red;
   }
-  .jumbo-contain {
-    width: 80% !important;
+  .jumbo-contain .message {
+    width: 60%;
   }
   .jumbo-contain .message .hello {
     font-size: 50px;
   }
   .jumbo-contain .message .meal {
     font-size: 50px !important;
+  }
+  .jumbo-contain .message .meal-about {
+    width: 60%;
+    margin: auto;
   }
   .jumbo-contain .paragraph {
     margin-top: 50px !important;
