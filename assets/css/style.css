@@ -4,6 +4,83 @@
   font-family: "Lato", sans-serif !important;
 }
 
+.visible-menu {
+  display: block;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+.hidden {
+  display: none;
+  -webkit-animation: slideout 2s 1;
+          animation: slideout 2s 1;
+}
+
+@-webkit-keyframes slideout {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 0%;
+  }
+}
+.mobile-dropdown {
+  -webkit-animation: slidein 2s 1;
+          animation: slidein 2s 1;
+  width: 90%;
+  background-color: rgb(39, 42, 50) !important;
+  opacity: 0.95;
+  height: 100vh;
+  position: fixed;
+}
+.mobile-dropdown .close-x {
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-dropdown .menu-list ul {
+  list-style: none;
+}
+.mobile-dropdown .menu-list ul li {
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+.mobile-dropdown .menu-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+.mobile-dropdown .menu-list ul li button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #ff4f38;
+  color: white;
+  border: none;
+}
+
 .nav-desktop {
   display: none;
 }
