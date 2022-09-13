@@ -240,6 +240,33 @@
   font-size: 20px;
 }
 
+.our-logo .logo-head {
+  text-align: center;
+}
+.our-logo .logo-head h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.our-logo .logo-head .line {
+  height: 3px;
+  width: 50px;
+  background-color: red;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.our-logo .logo-img {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+}
+.our-logo .logo-img img {
+  width: 100%;
+  box-shadow: 1px 2px 27px 0px rgba(115, 109, 109, 0.75);
+  -webkit-box-shadow: 1px 2px 27px 0px rgba(115, 109, 109, 0.75);
+  -moz-box-shadow: 1px 2px 27px 0px rgba(115, 109, 109, 0.75);
+}
+
 @media (min-width: 768px) {
   * {
     font-family: "Lato", sans-serif !important;
