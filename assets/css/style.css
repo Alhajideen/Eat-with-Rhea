@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif !important;
 }
 
 .nav-desktop {
@@ -44,6 +45,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "COCOGOOSE", sans-serif !important;
 }
 .header .jumbo-contain .paragraph {
   margin: auto;
@@ -227,6 +229,9 @@
 }
 
 @media (min-width: 768px) {
+  * {
+    font-family: "Lato", sans-serif !important;
+  }
   .header {
     height: 100vh;
   }
@@ -280,8 +285,7 @@
     font-size: 50px;
   }
   .jumbo-contain .message .meal {
-    font-size: 80px !important;
-    line-height: 10vh;
+    font-size: 50px !important;
   }
   .jumbo-contain .paragraph {
     margin-top: 50px !important;
@@ -301,13 +305,13 @@
     text-align: center;
     border-radius: 10px;
     margin-bottom: 20px;
-    height: 50vh;
   }
   .main-program .row .col-md-2 .icon {
     width: 100%;
   }
   .main-program .row .col-md-2 .tittle {
     width: 100%;
+    height: auto !important;
   }
   .main-program .row .col-md-2 .tittle h2 {
     font-size: 20px;
