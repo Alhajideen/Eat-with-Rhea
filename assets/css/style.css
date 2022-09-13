@@ -39,6 +39,7 @@
   font-weight: 400;
   color: #ec5242;
   font-weight: 600;
+  font-family: "COCOGOOSE", sans-serif;
   background-image: url("../img/red-black-stripe.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -357,6 +358,7 @@
     font-size: 50px !important;
   }
   .header .jumbo-contain .message .meal-about {
+    font-family: "COCOGOOSE", sans-serif;
     width: 80%;
     margin: auto;
   }
