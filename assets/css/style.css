@@ -254,6 +254,11 @@
   margin: auto;
   margin-bottom: 30px;
 }
+.our-logo .logo-head p {
+  width: 80%;
+  margin: auto;
+  font-size: 2vh;
+}
 .our-logo .logo-img {
   display: flex;
   justify-content: center;
@@ -262,9 +267,34 @@
 }
 .our-logo .logo-img img {
   width: 100%;
-  box-shadow: 1px 2px 27px 0px rgba(115, 109, 109, 0.75);
-  -webkit-box-shadow: 1px 2px 27px 0px rgba(115, 109, 109, 0.75);
-  -moz-box-shadow: 1px 2px 27px 0px rgba(115, 109, 109, 0.75);
+  padding: 10px;
+  border: 2px solid rgb(214, 212, 212);
+}
+
+.collaborators {
+  width: 100%;
+}
+.collaborators .col-head .line {
+  height: 3px;
+  width: 50px;
+  background-color: red;
+  margin: 30px auto;
+}
+.collaborators .col-head p {
+  width: 70%;
+  margin: auto;
+}
+.collaborators .row {
+  width: 85%;
+  margin: auto;
+  gap: 5px;
+}
+.collaborators .row .col-sm-12 {
+  width: auto;
+  height: 30vh;
+  background-image: url("../img/red-black-stripe.jpg");
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -274,67 +304,74 @@
   .header {
     height: 100vh;
   }
-  .phone-nav {
+  .header .phone-nav {
     display: none !important;
   }
-  .nav-desktop {
+  .header .nav-desktop {
     width: 100%;
     background-color: white;
     display: block;
   }
-  .nav-desktop .desktop-container {
+  .header .nav-desktop .desktop-container {
     width: 80%;
     margin: auto;
     display: flex;
     padding: 10px 0;
     justify-content: space-between;
   }
-  .nav-desktop .desktop-container span {
+  .header .nav-desktop .desktop-container span {
     font-size: 15px;
     font-weight: 500;
     color: #151517;
     padding: 10px 0;
   }
-  .nav-desktop .desktop-container .menu-list {
+  .header .nav-desktop .desktop-container .menu-list {
     width: 80%;
   }
-  .nav-desktop .desktop-container .menu-list ul {
+  .header .nav-desktop .desktop-container .menu-list ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
   }
-  .nav-desktop .desktop-container .menu-list ul li {
+  .header .nav-desktop .desktop-container .menu-list ul li {
     font-size: 15px;
     font-weight: 400;
     color: #151517;
     padding: 10px 0;
   }
-  .nav-desktop .desktop-container .menu-list ul li a {
+  .header .nav-desktop .desktop-container .menu-list ul li a {
     text-decoration: none;
     color: #414246;
   }
-  .nav-desktop .desktop-container .menu-list ul .design {
+  .header .nav-desktop .desktop-container .menu-list ul .design {
     padding: 10px;
     border: 3px solid red;
   }
-  .jumbo-contain .message {
-    width: 60%;
+  .header .jumbo-contain .message {
+    width: 80%;
   }
-  .jumbo-contain .message .hello {
+  .header .jumbo-contain .message .hello {
     font-size: 50px;
   }
-  .jumbo-contain .message .meal {
+  .header .jumbo-contain .message .meal {
     font-size: 50px !important;
   }
-  .jumbo-contain .message .meal-about {
-    width: 60%;
+  .header .jumbo-contain .message .meal-about {
+    width: 80%;
     margin: auto;
   }
-  .jumbo-contain .paragraph {
+  .header .jumbo-contain .paragraph {
     margin-top: 50px !important;
+    font-size: 30px;
   }
-  .jumbo-contain .date {
-    margin-top: 20px !important;
+  .header .jumbo-contain .date {
+    margin-top: 10vh !important;
+  }
+  .header .about-contact h2 {
+    font-size: 30px;
+  }
+  .header .about-contact p {
+    font-size: 30px;
   }
   .main-program .row {
     width: 80%;
@@ -382,6 +419,28 @@
   }
   .footer {
     width: 80%;
+    margin: auto;
+  }
+  .collaborators .col-head h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .collaborators .col-head .line {
+    height: 3px;
+    width: 50px;
+    background-color: red;
+    margin: 30px auto;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .row .col-sm-12 {
+    width: 45% !important;
+    text-align: center;
+  }
+  .row .col-sm-12 div {
+    width: 98%;
     margin: auto;
   }
 }/*# sourceMappingURL=style.css.map */
