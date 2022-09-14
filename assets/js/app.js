@@ -61,6 +61,7 @@ let dynamicArr = [
 window.addEventListener('load', () => {
   if (mobile.matches) {
     seeMore.style.display = 'none';
+    seeLess.style.display = 'none';
     displaySpeaker();
   } else {
     mobileSpeaker();
