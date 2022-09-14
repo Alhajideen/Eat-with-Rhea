@@ -25,6 +25,7 @@
     width: 90%;
   }
 }
+
 .hidden {
   display: none;
   -webkit-animation: slideout 2s 1;
