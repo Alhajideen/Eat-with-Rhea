@@ -7,7 +7,7 @@ const mobile = window.matchMedia('(min-width: 768px)');
 const seeMore = document.querySelector('.see-more');
 const seeLess = document.querySelector('.see-less');
 
-let dynamicArr = [
+const dynamicArr = [
   {
     id: 1,
     name: 'Omachi John',
@@ -60,7 +60,7 @@ let dynamicArr = [
 
 const displaySpeaker = () => {
   let displayAll = '';
-  for (let i = 0; i < dynamicArr.length; i++) {
+  for (let i = 0; i < dynamicArr.length; i += 1) {
     displayAll += `
         <div class="staff-card d-flex">
           <figure class="staff-img">
@@ -84,7 +84,7 @@ const displaySpeaker = () => {
 
 const mobileSpeaker = () => {
   let displayAll = '';
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i += 1) {
     displayAll += `
         <div class="staff-card d-flex">
           <figure class="staff-img">
