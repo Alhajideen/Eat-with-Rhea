@@ -266,6 +266,18 @@
   line-height: 18px;
 }
 
+.display-btn {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.display-btn button {
+  border: 2px solid grey;
+  padding: 10px;
+  background-color: transparent;
+}
+
 .partners {
   width: 100%;
   background-color: #414246;

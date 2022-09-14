@@ -2,6 +2,10 @@ const hamburger = document.querySelector('.hamburger');
 const dropdown = document.querySelector('.mobile-dropdown');
 const closeX = document.querySelector('.close-x');
 const myBtns = [hamburger, closeX];
+const staffContainer = document.querySelector('.staff-container');
+const mobile = window.matchMedia('(min-width: 768px)');
+const seeMore = document.querySelector('.see-more');
+const seeLess = document.querySelector('.see-less');
 
 let dynamicArr = [
   {
@@ -10,7 +14,7 @@ let dynamicArr = [
     topic: 'Lorem ipsum amet Nostrum, quibusdam!',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nihil',
-    avatar: '../img/speaker_01.png',
+    avatar: './assets/img/speaker_01.png',
   },
   {
     id: 2,
@@ -18,7 +22,7 @@ let dynamicArr = [
     topic: 'Lorem ipsum amet Nostrum, quibusdam!',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nihil',
-    avatar: '../img/speaker_02.png',
+    avatar: './assets/img/speaker_02.png',
   },
   {
     id: 3,
@@ -26,7 +30,7 @@ let dynamicArr = [
     topic: 'Lorem ipsum amet Nostrum, quibusdam!',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nihil',
-    avatar: '../img/speaker_03.png',
+    avatar: './assets/img/speaker_03.png',
   },
   {
     id: 4,
@@ -34,7 +38,7 @@ let dynamicArr = [
     topic: 'Lorem ipsum amet Nostrum, quibusdam!',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nihil',
-    avatar: '../img/speaker_04.png',
+    avatar: './assets/img/speaker_04.png',
   },
   {
     id: 5,
@@ -42,7 +46,7 @@ let dynamicArr = [
     topic: 'Lorem ipsum amet Nostrum, quibusdam!',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nihil',
-    avatar: '../img/speaker_05.png',
+    avatar: './assets/img/speaker_05.png',
   },
   {
     id: 6,
@@ -50,9 +54,78 @@ let dynamicArr = [
     topic: 'Lorem ipsum amet Nostrum, quibusdam!',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nihil',
-    avatar: '../img/speaker_06.png',
+    avatar: './assets/img/speaker_06.png',
   },
 ];
+
+window.addEventListener('load', () => {
+  if (mobile.matches) {
+    seeMore.style.display = 'none';
+    displaySpeaker();
+  } else {
+    mobileSpeaker();
+    seeLess.style.display = 'none';
+    seeMore.addEventListener('click', () => {
+      displaySpeaker();
+      seeMore.style.display = 'none';
+      seeLess.style.display = 'block';
+    });
+    seeLess.addEventListener('click', () => {
+      mobileSpeaker();
+      seeMore.style.display = 'block';
+      seeLess.style.display = 'none';
+    });
+  }
+});
+
+const displaySpeaker = () => {
+  let displayAll = '';
+  for (let i = 0; i < dynamicArr.length; i++) {
+    displayAll += `
+        <div class="staff-card d-flex">
+          <figure class="staff-img">
+            <img src="${dynamicArr[i].avatar}" alt="" />
+          </figure>
+          <div class="staff-details">
+            <h3 class="staff-name h1">${dynamicArr[i].name}</h3>
+            <h4 class="staff-desc">${dynamicArr[i].topic}</h4>
+            <div class="line"></div>
+            <p>
+              <i
+                >${dynamicArr[i].description}</i
+              >
+            </p>
+          </div>
+        </div>
+`;
+  }
+  staffContainer.innerHTML = displayAll;
+};
+
+const mobileSpeaker = () => {
+  let displayAll = '';
+  for (let i = 0; i < 2; i++) {
+    displayAll += `
+        <div class="staff-card d-flex">
+          <figure class="staff-img">
+            <img src="${dynamicArr[i].avatar}" alt="" />
+          </figure>
+          <div class="staff-details">
+            <h3 class="staff-name h1">${dynamicArr[i].name}</h3>
+            <h4 class="staff-desc">${dynamicArr[i].topic}</h4>
+            <div class="line"></div>
+            <p>
+              <i
+                >${dynamicArr[i].description}</i
+              >
+            </p>
+          </div>
+        </div>
+        
+`;
+  }
+  staffContainer.innerHTML = displayAll;
+};
 
 myBtns.forEach((e) => {
   e.addEventListener('click', () => {
