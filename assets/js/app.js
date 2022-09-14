@@ -58,27 +58,6 @@ let dynamicArr = [
   },
 ];
 
-window.addEventListener('load', () => {
-  if (mobile.matches) {
-    seeMore.style.display = 'none';
-    seeLess.style.display = 'none';
-    displaySpeaker();
-  } else {
-    mobileSpeaker();
-    seeLess.style.display = 'none';
-    seeMore.addEventListener('click', () => {
-      displaySpeaker();
-      seeMore.style.display = 'none';
-      seeLess.style.display = 'block';
-    });
-    seeLess.addEventListener('click', () => {
-      mobileSpeaker();
-      seeMore.style.display = 'block';
-      seeLess.style.display = 'none';
-    });
-  }
-});
-
 const displaySpeaker = () => {
   let displayAll = '';
   for (let i = 0; i < dynamicArr.length; i++) {
@@ -127,6 +106,27 @@ const mobileSpeaker = () => {
   }
   staffContainer.innerHTML = displayAll;
 };
+
+window.addEventListener('load', () => {
+  if (mobile.matches) {
+    seeMore.style.display = 'none';
+    seeLess.style.display = 'none';
+    displaySpeaker();
+  } else {
+    mobileSpeaker();
+    seeLess.style.display = 'none';
+    seeMore.addEventListener('click', () => {
+      displaySpeaker();
+      seeMore.style.display = 'none';
+      seeLess.style.display = 'block';
+    });
+    seeLess.addEventListener('click', () => {
+      mobileSpeaker();
+      seeMore.style.display = 'block';
+      seeLess.style.display = 'none';
+    });
+  }
+});
 
 myBtns.forEach((e) => {
   e.addEventListener('click', () => {
