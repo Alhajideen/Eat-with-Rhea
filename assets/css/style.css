@@ -31,21 +31,21 @@
           animation: slideout 2s 1;
 }
 
-@-webkit-keyframes slideout {
+@-webkit-keyframes fade-in {
   from {
-    width: 90%;
+    opacity: 0;
   }
   to {
-    width: 0%;
+    opacity: 1;
   }
 }
 
-@keyframes slideout {
+@keyframes fade-in {
   from {
-    width: 90%;
+    opacity: 0;
   }
   to {
-    width: 0%;
+    opacity: 1;
   }
 }
 .mobile-dropdown {
@@ -68,6 +68,8 @@
   color: white;
   font-size: 25px;
   padding: 10px;
+  -webkit-animation: fade-in 3s 1;
+          animation: fade-in 3s 1;
 }
 .mobile-dropdown .menu-list ul li a {
   text-decoration: none;
@@ -102,7 +104,6 @@
   margin: auto;
   display: flex;
   height: auto;
-  margin: auto;
 }
 .header .phone-nav .hamburger {
   width: 15%;
@@ -113,7 +114,6 @@
 }
 .header .jumbo-contain .message .meal {
   font-size: 50px;
-  font-weight: 400;
   color: #ec5242;
   font-weight: 600;
   font-family: "COCOGOOSE", sans-serif;
