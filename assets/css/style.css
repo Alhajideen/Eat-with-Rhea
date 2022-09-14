@@ -534,4 +534,10 @@
     width: 98%;
     margin: auto;
   }
+  .display-btn {
+    display: none;
+  }
+  .display-btn button {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
