@@ -22,10 +22,17 @@ This is a professional management web app for our intercontinental eatery. This 
 
 ## Live Demo Link
 
-[View Live Link]( https://alhajideen.github.io/Eat-with-Rhea/)
+[View Live Link](https://alhajideen.github.io/Eat-with-Rhea/)
 
-Getting Started
-This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
+## Getting Started 🏁
+
+To get a local copy up and running follow these simple example steps.
+
+> Clone the app by running this command
+
+```bash
+git clone https://github.com/Alhajideen/Eat-with-Rhea.git
+```
 
 ## Authors
 
