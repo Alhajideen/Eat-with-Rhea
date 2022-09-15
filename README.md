@@ -49,3 +49,8 @@ etc
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
+
+## UI Inspiration
+
+This design was inspired by Cindy Shin;
+[Behance Link] (hhttps://www.behance.net/adagio07)
