@@ -22,7 +22,7 @@ This is a professional management web app for our intercontinental eatery. This 
 
 ## Live Demo Link
 
-[View Live Link] (https://alhajideen.github.io/Portfolio-setup/)
+[View Live Link] ( https://alhajideen.github.io/Eat-with-Rhea/)
 
 Getting Started
 This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
