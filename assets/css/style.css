@@ -392,7 +392,7 @@
 }
 
 .our-logo .logo-img img {
-  width: 50%;
+  width: 70%;
   padding: 10px;
   border: 2px solid rgb(214, 212, 212);
 }
@@ -435,7 +435,7 @@
 .our-logo .logo-img {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 40%;
   margin: auto;
 }
 
