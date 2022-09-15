@@ -560,6 +560,7 @@
     flex-direction: column;
     text-align: center;
     margin-bottom: 20px;
+    padding: 10px;
   }
 
   .main-program .row .col-md-2 .icon {
