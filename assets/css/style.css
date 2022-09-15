@@ -117,6 +117,14 @@
   background-repeat: no-repeat;
 }
 
+.header .dark-header {
+  display: none;
+}
+
+.header ul {
+  list-style: none;
+}
+
 .header .phone-nav {
   width: 90%;
   margin: auto;
@@ -461,6 +469,11 @@
     height: 100vh;
   }
 
+  .header .dark-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .header .phone-nav {
     display: none !important;
   }
@@ -474,6 +487,7 @@
   .header .nav-desktop .desktop-container {
     width: 80%;
     margin: auto;
+    margin-top: -15px;
     display: flex;
     padding: 10px 0;
     justify-content: space-between;
