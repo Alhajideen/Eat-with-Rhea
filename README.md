@@ -52,6 +52,10 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE) licensed.
 
+## Presentation video
+
+[Loom video](https://www.loom.com/share/241e63c00b824007a3ab9f28578ca694)
+
 ## Acknowledgements
 
 This design was inspired by Cindy Shin;
