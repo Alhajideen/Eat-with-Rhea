@@ -380,7 +380,7 @@
 }
 
 .our-logo .logo-img img {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: 2px solid rgb(214, 212, 212);
 }
@@ -541,11 +541,11 @@
   }
 
   .header .about-contact h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .header .about-contact p {
-    font-size: 30px;
+    font-size: 15px;
   }
 
   .main-program .row {
