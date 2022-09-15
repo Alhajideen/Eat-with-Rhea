@@ -563,6 +563,10 @@
     padding: 10px;
   }
 
+  .main-program .row .col-md-2 p {
+    font-size: 12px !important;
+  }
+
   .main-program .row .col-md-2 .icon {
     width: 100%;
   }
