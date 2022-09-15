@@ -36,21 +36,16 @@ This is an example of how you may give instructions on setting up your project l
 - LinkedIn: [LinkedIn](https://linkedin.com/in/nurudeen-salifu-776753244)
 
 Feel free to check the issues page.
-[View Live Link] (https://github.com/Alhajideen/Eat-with-Rhea/issues)
+[View Live Link](https://github.com/Alhajideen/Eat-with-Rhea/issues)
 
 Show your support
 Give a ⭐️ if you like this project!
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
 
-## UI Inspiration
+## Acknowledgements
 
 This design was inspired by Cindy Shin;
 [Behance Link](hhttps://www.behance.net/adagio07)
