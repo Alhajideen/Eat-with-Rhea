@@ -171,7 +171,7 @@
 .header .jumbo-contain .date {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .our-logo .logo-head h2 {
@@ -312,6 +312,15 @@
 
 .staff .staff-container .staff-card .staff-details h3 {
   font-size: 25px;
+}
+
+.about-footer {
+  background-color: white;
+  margin-top: 5vh;
+}
+
+.about-footer h4 {
+  color: black;
 }
 
 .footer .all-rights h4 {
@@ -598,6 +607,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+
+  .about-footer {
+    background-color: #151517;
+    margin-top: 5vh;
+  }
+
+  .about-footer h4 {
+    color: white;
   }
 
   .footer {
