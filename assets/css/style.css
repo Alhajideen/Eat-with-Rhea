@@ -271,6 +271,10 @@
   font-size: 15px;
 }
 
+.main-program .whole-program {
+  display: none;
+}
+
 .main-program .btn {
   width: 85%;
   margin: auto;
@@ -606,6 +610,10 @@
 
   .main-program .row .col-md-2 .desc p {
     font-size: 20px;
+  }
+
+  .main-program .whole-program {
+    display: block;
   }
 
   .main-program .btn {
