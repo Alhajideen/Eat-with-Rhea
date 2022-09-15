@@ -69,6 +69,10 @@
   justify-content: flex-end;
 }
 
+.header ul {
+  list-style: none;
+}
+
 .mobile-dropdown .menu-list ul {
   list-style: none;
 }
@@ -119,10 +123,6 @@
 
 .header .dark-header {
   display: none;
-}
-
-.header ul {
-  list-style: none;
 }
 
 .header .phone-nav {
@@ -179,7 +179,7 @@
 .header .jumbo-contain .date {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .our-logo .logo-head h2 {
@@ -546,12 +546,12 @@
   }
 
   .header .jumbo-contain .paragraph {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
     font-size: 30px;
   }
 
   .header .jumbo-contain .date {
-    margin-top: 10vh !important;
+    margin-top: 5vh !important;
   }
 
   .header .about-contact h2 {
@@ -577,6 +577,12 @@
     padding: 10px;
   }
 
+  .our-logo .logo-head p {
+    width: 80%;
+    margin: auto;
+    font-size: 2vh;
+  }
+
   .main-program .row .col-md-2 p {
     font-size: 12px !important;
   }
@@ -596,12 +602,6 @@
 
   .main-program .row .col-md-2 .desc {
     width: 100%;
-  }
-
-  .our-logo .logo-head p {
-    width: 80%;
-    margin: auto;
-    font-size: 2vh;
   }
 
   .main-program .row .col-md-2 .desc p {
