@@ -559,7 +559,6 @@
     display: flex !important;
     flex-direction: column;
     text-align: center;
-    border-radius: 10px;
     margin-bottom: 20px;
   }
 
