@@ -22,10 +22,17 @@ This is a professional management web app for our intercontinental eatery. This 
 
 ## Live Demo Link
 
-[View Live Link] (https://alhajideen.github.io/Portfolio-setup/)
+[View Live Link](https://alhajideen.github.io/Eat-with-Rhea/)
 
-Getting Started
-This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
+## Getting Started 🏁
+
+To get a local copy up and running follow these simple example steps.
+
+> Clone the app by running this command
+
+```bash
+git clone https://github.com/Alhajideen/Eat-with-Rhea.git
+```
 
 ## Authors
 
@@ -36,16 +43,20 @@ This is an example of how you may give instructions on setting up your project l
 - LinkedIn: [LinkedIn](https://linkedin.com/in/nurudeen-salifu-776753244)
 
 Feel free to check the issues page.
-[View Live Link] (https://github.com/Alhajideen/Eat-with-Rhea/issues)
+[View Live Link](https://github.com/Alhajideen/Eat-with-Rhea/issues)
 
 Show your support
 Give a ⭐️ if you like this project!
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
-
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
+
+## Presentation video
+
+[Loom video](https://www.loom.com/share/241e63c00b824007a3ab9f28578ca694)
+
+## Acknowledgements
+
+This design was inspired by Cindy Shin;
+[Behance Link](hhttps://www.behance.net/adagio07)

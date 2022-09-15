@@ -7,7 +7,7 @@ const mobile = window.matchMedia('(min-width: 768px)');
 const seeMore = document.querySelector('.see-more');
 const seeLess = document.querySelector('.see-less');
 
-let dynamicArr = [
+const dynamicArr = [
   {
     id: 1,
     name: 'Omachi John',
@@ -58,30 +58,9 @@ let dynamicArr = [
   },
 ];
 
-window.addEventListener('load', () => {
-  if (mobile.matches) {
-    seeMore.style.display = 'none';
-    seeLess.style.display = 'none';
-    displaySpeaker();
-  } else {
-    mobileSpeaker();
-    seeLess.style.display = 'none';
-    seeMore.addEventListener('click', () => {
-      displaySpeaker();
-      seeMore.style.display = 'none';
-      seeLess.style.display = 'block';
-    });
-    seeLess.addEventListener('click', () => {
-      mobileSpeaker();
-      seeMore.style.display = 'block';
-      seeLess.style.display = 'none';
-    });
-  }
-});
-
 const displaySpeaker = () => {
   let displayAll = '';
-  for (let i = 0; i < dynamicArr.length; i++) {
+  for (let i = 0; i < dynamicArr.length; i += 1) {
     displayAll += `
         <div class="staff-card d-flex">
           <figure class="staff-img">
@@ -105,7 +84,7 @@ const displaySpeaker = () => {
 
 const mobileSpeaker = () => {
   let displayAll = '';
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i += 1) {
     displayAll += `
         <div class="staff-card d-flex">
           <figure class="staff-img">
@@ -127,6 +106,27 @@ const mobileSpeaker = () => {
   }
   staffContainer.innerHTML = displayAll;
 };
+
+window.addEventListener('load', () => {
+  if (mobile.matches) {
+    seeMore.style.display = 'none';
+    seeLess.style.display = 'none';
+    displaySpeaker();
+  } else {
+    mobileSpeaker();
+    seeLess.style.display = 'none';
+    seeMore.addEventListener('click', () => {
+      displaySpeaker();
+      seeMore.style.display = 'none';
+      seeLess.style.display = 'block';
+    });
+    seeLess.addEventListener('click', () => {
+      mobileSpeaker();
+      seeMore.style.display = 'block';
+      seeLess.style.display = 'none';
+    });
+  }
+});
 
 myBtns.forEach((e) => {
   e.addEventListener('click', () => {
